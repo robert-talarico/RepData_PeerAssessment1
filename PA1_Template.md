@@ -1,6 +1,9 @@
-# Reproducible Research Project 1
-Robert Talarico  
-April 8, 2017  
+---
+title: "Reproducible Research Project 1"
+author: "Robert Talarico"
+date: "April 8, 2017"
+output: html_document
+---
 
 Loading and preprocessing the data
 ==================================
@@ -71,7 +74,7 @@ ggplot(data=steps)+
   labs(title="Histogram of Total Steps Per Day", x="Total Steps")
 ```
 
-![](PA1_Template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png)
 
 ```r
 mean(steps$total_steps)
@@ -113,7 +116,7 @@ ggplot(data=steps2)+
     y="Average Steps",x="5-min Intervals")
 ```
 
-![](PA1_Template_files/figure-html/unnamed-chunk-5-1.png)<!-- -->
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5-1.png)
 
 ```r
 (steps2 %>%
@@ -177,7 +180,7 @@ ggplot(data=steps)+
 labs(title="Histogram of Total Steps Per Day (imputed)", x="Total Steps")
 ```
 
-![](PA1_Template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
+![plot of chunk unnamed-chunk-6](figure/unnamed-chunk-6-1.png)
 
 ```r
 mean(steps$total_steps)
@@ -227,6 +230,6 @@ ggplot(data=to_plot)+
        y="Average Steps",x="5-min Intervals")
 ```
 
-![](PA1_Template_files/figure-html/unnamed-chunk-7-1.png)<!-- -->
+![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png)
 
  
